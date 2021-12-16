@@ -20,7 +20,7 @@ jobs:
         run: |
           pwd
           ls
-          conda install conda-build gitpython git
+          conda install conda-build
           pwd
           ls
       - name: Checkout
