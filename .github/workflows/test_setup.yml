@@ -36,3 +36,4 @@ jobs:
           ls
           cd setup
           pwd
+          ls
