@@ -1,0 +1,16 @@
+name: Test S3
+
+on:
+  push
+
+jobs:
+
+  test:
+    name: Test
+    runs-on: "ubuntu-latest"
+    steps:
+    - name: Check
+      run: aws s3 ls
+    env:
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
